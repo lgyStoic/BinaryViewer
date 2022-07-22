@@ -16,7 +16,14 @@ public:
     ~MainWindow();
 
 private slots:
-    void on_pushButton_clicked();
+
+    void on_SelectFile_clicked();
+
+    void on_confirmButton_clicked();
+
+private:
+
+    void updateImagePathLabel(QString &fileName);
 
 private:
     Ui::MainWindow *ui;
